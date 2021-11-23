@@ -3,6 +3,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Place,  Photo
 import uuid
 import boto3
+from django.contrib.auth.views import LoginView
 
 S3_BASE_URL = 'https://s3.us-east-1.amazonaws.com/'
 BUCKET = 'cronaldo'
@@ -10,8 +11,7 @@ BUCKET = 'cronaldo'
 # Define the home view
 
 
-def home(request):
-  return render(request, 'home.html')
+
 
 
 def about(request):
@@ -46,10 +46,16 @@ def add_photo(request, place_id):
   return redirect('places_detail', place_id=place_id)
 
 
+class Home(LoginView):
+  template_name = 'home.html'
 class PlaceCreate(CreateView):
   model = Place
   fields = '__all__'
   success_url = '/places/'
+
+  def form_valid(self, form):
+    form.instance.user = self.request.user  
+    return super().form_valid(form)
 
 class PlaceUpdate(UpdateView):
   model = Place

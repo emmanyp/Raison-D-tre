@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from datetime import date
+from django.contrib.auth.models import User
 # Create your models here.
 
 class Place(models.Model):
@@ -9,6 +10,7 @@ class Place(models.Model):
   description = models.TextField(max_length=250)
   date = models.DateField('Start Date')
   end_date =  models.DateField('End Date')
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
 
   def __str__(self):
     return self.name
