@@ -34,4 +34,4 @@ class PlaceUpdate(UpdateView):
 
 class PlaceDelete(DeleteView):
   model = Place
-  success_url = '/Places/'
+  success_url = '/places/'
