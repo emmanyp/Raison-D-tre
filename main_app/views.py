@@ -26,3 +26,4 @@ def places_detail(request, place_id):
 class PlaceCreate(CreateView):
   model = Place
   fields = '__all__'
+  success_url = '/places/'
