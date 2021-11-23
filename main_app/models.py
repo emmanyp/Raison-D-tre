@@ -15,3 +15,11 @@ class Place(models.Model):
 
   def get_absolute_url(self):
     return reverse('places_detail', kwargs={'place_id': self.id})
+
+
+class Photo(models.Model):
+  url = models.CharField(max_length=250)
+  place = models.OneToOneField(Place, on_delete=models.CASCADE)
+
+  def __str__(self):
+    return f"Photo for place_id: {self.place_id} @{self.url}"
