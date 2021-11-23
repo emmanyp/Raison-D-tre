@@ -23,6 +23,10 @@
       <p>It starts {{ place.start_date}} and runs through{{ place.end_date}}</p>
       <p> it is located at {{ place.location }}</p>
       <p><small>{{ place.description }}</small></p>
+      <div class="place-actions">
+      <a href="{% url 'places_update' place.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'places_delete' place.id %}" class="btn danger">Delete</a>
+    </div>
   </div>
 </section>
 

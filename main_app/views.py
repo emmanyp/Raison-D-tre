@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Place
 
 # Define the home view
@@ -27,3 +27,11 @@ class PlaceCreate(CreateView):
   model = Place
   fields = '__all__'
   success_url = '/places/'
+
+class PlaceUpdate(UpdateView):
+  model = Place
+  fields = '__all__'
+
+class PlaceDelete(DeleteView):
+  model = Place
+  success_url = '/Places/'
