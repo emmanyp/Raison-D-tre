@@ -18,7 +18,7 @@
 <section class="card-container">
   {% for place in places %}
     <div class="card" >
-      <a href="/places/{{ place.id }}">
+      <a href="{% url 'places_detail' place.id %}">
       <div class="card-content">
         <div class="card-img-container">
           <img 
