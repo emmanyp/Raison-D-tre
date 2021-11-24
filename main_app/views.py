@@ -72,7 +72,7 @@ class Home(LoginView):
 
 class PlaceCreate(LoginRequiredMixin, CreateView):
   model = Place
-  fields = '__all__'
+  fields = ['name', 'location', 'description', 'date', 'end_date']
   success_url = '/places/'
 
   def form_valid(self, form):

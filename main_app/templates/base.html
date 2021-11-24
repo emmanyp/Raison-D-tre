@@ -10,6 +10,7 @@
     type="image/png"
     href=""
   >
+  <script defer src="{% static 'js/place-form.js' %}"></script>
   <title>Raison D'être</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
   {% block head %}
@@ -17,15 +18,18 @@
 </head>
 <body>
   <header>
-    <div>
-      <a href="/">
-        <img 
-          src="" 
-          alt="Raison D'êtreLogo"
-        >
-      </a>
-    </div>
+  <div class="container">
     <nav>
+     <input type="checkbox" id="nav" class="hidden">
+      <label for="nav" class="nav-btn">
+            <i></i>
+            <i></i>
+            <i></i>
+      </label>
+      <div class="logo">
+            <a href="{% url 'home' %}">Raison Dêtre </a>
+      </div>
+      <div class="nav-wrapper">
       <ul>
         {% if user.is_authenticated %}
       <li><a href="{% url 'places_index' %}">All Places</a></li>
@@ -35,10 +39,12 @@
           {% else %}
             <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="{% url 'home' %}">Login</a></li>
-            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+            <li><a href="{% url 'signup' %}">Sign up</a></li>
         {% endif %}
-      </ul>
+        </ul>
+      </div>
     </nav>
+  </div>
   </header>
   <main>
     {% block content %}
