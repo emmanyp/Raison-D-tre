@@ -1,3 +1,56 @@
 body{
-  background-color: lightgreen;
+  background-color: white;
+}
+
+h1{
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(153, 111, 76);
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 8px;
+  
+}
+
+table {
+  padding: 0 40px;
+  width: 100%;
+  border-spacing: 0 10px;
+}
+
+th {
+  text-align: left;
+  /* padding: 6px 20px 0 0; */
+  font-weight: normal;
+  vertical-align: top;
+  font-size:large;
+  font-weight: bold;
+  color:rgb(153, 111, 76) ;
+  text-align: center;
+}
+
+td {
+  max-width: 60%;
+}
+
+td > * {
+  width: 80%;
+  padding: 2px 4px;
+  font-size: var(--font-l);
+  border-radius: 8px;
+  border-color:rgb(153, 111, 76);
+}
+
+td > textarea {
+  height: calc(4 * var(--font-l) + 8px);
+  font-family: inherit;
+}
+
+.btn {
+  align-self: flex-end;
+  margin-right: 215px;
+  border-radius: 10px;
 }
