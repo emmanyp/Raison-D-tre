@@ -32,14 +32,18 @@ html {
 body {
       margin: 0;
       padding: 0;
+      /* background-image:url("https://media.giphy.com/media/IkYDnWIUgBXzuY3ume/giphy.gif"); */
       width: 100%;
       height: 100vh;
       font-family: Poppins;
       font-weight: 400;
-      background: url(background-img.jpg);
-      background-position: center;
-      background-size: cover;
+      /* background-position: 50% 0%;
+      background-size:cover;
+      background-repeat:no-repeat; */
+      
+      
 }
+
 
 nav {
       padding: 8px;
@@ -53,7 +57,7 @@ nav {
 }
 
 .logo a {
-      color: #000;
+      color:rgb(153, 111, 76);
       text-transform: uppercase;
       font-weight: 700;
       font-size: 18px;
@@ -81,15 +85,21 @@ nav ul li:last-child {
 nav ul li a {
       display: inline-block;
       outline: none;
-      color: #000;
+      color: rgb(153, 111, 76)
+;
       text-transform: uppercase;
       text-decoration: none;
       font-size: 14px;
       letter-spacing: 1.2px;
       font-weight: 600;
 }
-
-@media screen and (min-width: 200px) {
+nav a:hover {
+  color:white;
+}
+nav li:hover{
+  background-color:rgb(153, 111, 76) ;
+}
+@media screen and (max-width: 864px) {
       .logo {
             padding: 0;
       }
@@ -101,9 +111,10 @@ nav ul li a {
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: #fff;
+            background:rgba(153, 111, 76, 0.397);
             opacity: 0;
             transition: all 0.2s ease;
+            
       }
 
       .nav-wrapper ul {
@@ -144,7 +155,7 @@ nav ul li a {
       .nav-wrapper ul li a {
             padding: 10px 24px;
             opacity: 0;
-            color: #000;
+            color:white;
             font-size: 14px;
             font-weight: 600;
             letter-spacing: 1.2px;
@@ -168,7 +179,7 @@ nav ul li a {
             display: block;
             width: 20px;
             height: 2px;
-            background: #000;
+            background:rgb(153, 111, 76);
             border-radius: 2px;
             margin-left: 14px;
       }
@@ -192,7 +203,7 @@ nav ul li a {
 }
 
 #nav:checked + .nav-btn i {
-      background: #000;
+      background: rgb(153, 111, 76);
       transition: transform 0.2s ease;
 }
 
