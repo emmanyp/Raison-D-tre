@@ -1,1 +1,1 @@
-web: gunicorn  RaisonDêtre.wsgi
+web: gunicorn RaisonDêtre.wsgi
