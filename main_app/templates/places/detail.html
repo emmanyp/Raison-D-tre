@@ -26,29 +26,31 @@
         alt="city"
       > {% endcomment %}
     {% endif %}
-  </div>
+    </div>
+
     <div class="place-details">
       <h2 class="card-title">{{ place.name }}</h2>
       <p>It starts {{ place.start_date}} and runs through{{ place.end_date}}</p>
       <p> it is located at {{ place.location }}</p>
       <p><small>{{ place.description }}</small></p>
       <div class="place-actions">
-      <a href="{% url 'places_update' place.id %}" class="btn warn"><i class="far fa-edit"></i></a>
-      <a href="{% url 'places_delete' place.id %}" class="btn danger"><i class="fas fa-backspace"></i></a>
-    </div>
-    <h3>Change {{ place.name }}'s photo</h3>
-    <p id="file-name"></p>
-    <form 
-      action="{% url 'add_photo' place.id %}"
-      enctype="multipart/form-data"
-      method="POST"
-    >
+        <a href="{% url 'places_update' place.id %}" class="btn warn"><i class="far fa-edit"></i></a>
+        <a href="{% url 'places_delete' place.id %}" class="btn danger"><i class="fas fa-backspace"></i></a>
+      </div>
+      <h3>Change {{ place.name }}'s photo</h3>
+      <form 
+        action="{% url 'add_photo' place.id %}"
+        enctype="multipart/form-data"
+        method="POST"
+      >
       {% csrf_token %}
+      <div class="place-actions">
       <label class="btn secondary">
         Choose photo
         <input type="file" name="photo-file" id="file-input">
       </label>
       <button type="submit" class="btn submit">Upload Photo</button>
+      </div>
     </form>
   </div>
 </section>
