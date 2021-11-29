@@ -17,19 +17,19 @@ BUCKET = 'cronaldo'
 
 
 def about(request):
-  return render(request, 'about.html')
+    return render(request, 'about.html')
 
 
 @login_required
 def places_index(request):
-  places = Place.objects.filter(user=request.user)
-  return render(request, 'places/index.html', {'places': places})
+    places = Place.objects.filter(user=request.user)
+    return render(request, 'places/index.html', {'places': places})
 
 
 @login_required
 def places_detail(request, place_id):
-  place = Place.objects.get(id=place_id)
-  return render(request, 'places/detail.html', { 'place': place })
+    place = Place.objects.get(id=place_id)
+    return render(request, 'places/detail.html', { 'place': place })
 
 
 @login_required
@@ -67,23 +67,23 @@ def signup(request):
 
 
 class Home(LoginView):
-  template_name = 'home.html'
+    template_name = 'home.html'
 
 
 class PlaceCreate(LoginRequiredMixin, CreateView):
-  model = Place
-  fields = ['name', 'location', 'description', 'date', 'end_date']
-  success_url = '/places/'
+    model = Place
+    fields = ['name', 'location', 'description', 'date', 'end_date']
+    success_url = '/places/'
 
-  def form_valid(self, form):
-    form.instance.user = self.request.user  
-    return super().form_valid(form)
+    def form_valid(self, form):
+        form.instance.user = self.request.user  
+        return super().form_valid(form)
 
 
 class PlaceUpdate(LoginRequiredMixin, UpdateView):
-  model = Place
-  fields = '__all__'
+    model = Place
+    fields = '__all__'
 
 class PlaceDelete(LoginRequiredMixin, DeleteView):
-  model = Place
-  success_url = '/places/'
+    model = Place
+    success_url = '/places/'

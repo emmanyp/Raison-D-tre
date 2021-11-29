@@ -33,8 +33,8 @@
       <p> it is located at {{ place.location }}</p>
       <p><small>{{ place.description }}</small></p>
       <div class="place-actions">
-      <a href="{% url 'places_update' place.id %}" class="btn warn">Edit</a>
-      <a href="{% url 'places_delete' place.id %}" class="btn danger">Delete</a>
+      <a href="{% url 'places_update' place.id %}" class="btn warn"><i class="far fa-edit"></i></a>
+      <a href="{% url 'places_delete' place.id %}" class="btn danger"><i class="fas fa-backspace"></i></a>
     </div>
     <h3>Change {{ place.name }}'s photo</h3>
     <p id="file-name"></p>
