@@ -56,7 +56,7 @@ h1{
   height: 575px;
   border: var(--borders);
   box-shadow: var(--card-box-shadow);
-  background-color:  rgb(153, 111, 76);;
+  background-color:  rgb(153, 111, 76, 0.5);
   backdrop-filter: 5px;
   
 }
@@ -90,5 +90,5 @@ h1{
   text-align: center;
   margin: 5px 0;
   font-size: var(--font-reg);
-  \
+  
 }
