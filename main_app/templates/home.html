@@ -7,7 +7,7 @@
 
 {% block content %}
 
-<section>
+{% comment %} <section>
   <div>
     <img src="{% static 'images/' %}" alt="" />
   </div>
@@ -15,7 +15,7 @@
     src="{% static 'images/' %}" 
     alt=""
   />
-</section>
+</section> {% endcomment %}
 <section>
   {% if not user.is_authenticated %}
   <form action="{% url 'home' %}" method="post" class="login">
