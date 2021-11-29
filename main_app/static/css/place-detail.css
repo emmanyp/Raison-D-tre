@@ -101,16 +101,45 @@
 
 @media only screen and (min-width: 768px) {
   .place-container {
-    padding: 35px 30px;
+    padding: 120px 30px;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: auto;
   }
-
+  
   .place-img {
-    width: 25%;
+    width: 60%;
     max-width: 250px;
-    margin-right: 25px;
+    /* margin: auto; */
   }
+  .usr-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow:  rgb(153, 111, 76, 0.5) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px
+}
+/* 
+  .place-details h2 {
+  font-size: var(--font-xl);
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-right: 25px;
+} */
+
+.place-details h3 {
+  margin: 20px 0 10px;
+  font-size: var(--font-l);
+  text-align: center;
+  /* margin-right: 25px; */
+}
+
+.place-details p {
+  font-size: var(--font-reg);
+  margin: 8px 0;
+  text-align: center;
+  /* margin-right: 25px; */
+}
 
 }
