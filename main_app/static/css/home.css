@@ -80,22 +80,31 @@ input.visited {
 }
 
 @media only screen and (min-width: 768px) {
-  main {
-    justify-content:space-evenly;
+  body{
     margin: 0;
+    padding: 0;
   }
-  main > section {
-    width: 50%;
+  main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   }
-  img{
-    height: 150%;
-    width: 150%;
-    margin: o;
-
-    
+  .right{
+  width: 58%;
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 13px;
+  background-repeat: no-repeat;
+  background-image: url("https://i.pinimg.com/originals/9a/ee/7b/9aee7b7f0f139531a19231a96584e229.jpg");
   }
-
-
+  .left{
+  width: 40%;
+  background-color: white;
+  margin-right: 14px;
+  }
   .login {
     border: 5px solid rgb(153, 111, 76);
     padding: 20px;
