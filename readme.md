@@ -19,7 +19,7 @@ Raison D'etre means a passionate aspiration or ambition and can be a synonym for
 
  Python 
 
- Javascrpt 
+ Javascript 
 
  CSS
 
