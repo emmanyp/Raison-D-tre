@@ -9,9 +9,9 @@ Raison D'etre means a passionate aspiration or ambition and can be a synonym for
 [ click Here](https://trello.com/b/6diSYTod/project-3)
 
 ## Getting Started:
-![alt text](main_app/static/images/login.png)
-![alt text](main_app/static/images/phone-all-places.png)
-![alt text](main_app/static/images/phone-detail.png)
+![alt text](main_app/static/images/Screen%20Shot%202021-11-30%20at%203.02.11%20PM.png)
+![alt text](main_app/static/images/Screen%20Shot%202021-11-30%20at%203.01.24%20PM.png)
+![alt text](main_app/static/images/Screen%20Shot%202021-11-30%20at%203.00.56%20PM.png)
 ![alt text](main_app/static/images/all-places.png) 
 
 
