@@ -11,12 +11,9 @@ h1{
 }
 
 table {
-  padding: 0 40px;
+  padding: 0 20px;
   width: 100%;
   border-spacing: 0 10px;
-}
-span{
-  padding: 30px;
 }
 th {
   text-align: left;
@@ -33,6 +30,14 @@ td {
   max-width: 60%;
 }
 
+td >span{
+  /* text-align: center; */
+  margin-top: 5px;
+  color: rgb(131, 130, 130);
+}
+td > ul{
+  padding: 0;
+}
 td > * {
   width: 80%;
   padding: 2px 4px;

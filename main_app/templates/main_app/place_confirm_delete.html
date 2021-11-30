@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block head %}
+  <link rel="stylesheet" href="{% static 'css/place_confirm_delete.css' %}">
+{% endblock %}
+
 
 {% block content %}
-
+<section>
 <div class="page-header">
   <h1>Delete Place?</h1>
-  {% comment %} <img src="{% static 'images/' %}" alt=""/> {% endcomment %}
 </div>
 <h2>Are you sure you want to delete {{ object.name }}?</h2>
 
@@ -19,5 +22,6 @@
   </a>
   <button type="submit" class="btn danger">Yes - Delete!</button>
 </form>
+</section>
 
 {% endblock %}
