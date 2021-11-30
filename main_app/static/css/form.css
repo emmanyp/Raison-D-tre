@@ -17,7 +17,6 @@ table {
 }
 th {
   text-align: left;
-  /* padding: 6px 20px 0 0; */
   font-weight: normal;
   vertical-align: top;
   font-size:large;
@@ -32,7 +31,6 @@ td {
 }
 
 td >span{
-  /* text-align: center; */
   margin-top: 5px;
   color: rgb(131, 130, 130);
 }

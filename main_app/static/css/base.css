@@ -96,18 +96,18 @@ nav li:hover{
 }
 
 .secondary {
-  color: var(--secondary);
-  border-color: var(--secondary);
+      color: var(--secondary);
+      border-color: var(--secondary);
 }
 
 .warn {
-  color: var(--warn);
-  border-color: var(--warn);
+      color: var(--warn);
+      border-color: var(--warn);
 }
 
 .danger {
-  color: var(--danger);
-  border-color: var(--danger);
+      color: var(--danger);
+      border-color: var(--danger);
 }
 @media screen and (max-width: 864px) {
       .logo {
