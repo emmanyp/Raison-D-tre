@@ -1,19 +1,26 @@
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 100%;
+  text-align: center;
+  vertical-align: top;
 }
 
-main > section {
-  width: 100%;
-  padding: 10px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+.right{
+  display: inline-block;
+  width: 600px;
+  height: 350px;
+  margin: 10px auto;
+  overflow: auto;
+  background-image: url("https://images.pexels.com/photos/3467149/pexels-photo-3467149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  }
+  .left{
+  display: inline-block;
+  width: 300px;
+  height: 350px;
+  margin: 10px auto;
+  overflow: auto;
+  }
 .header-logo-container {
   display: none;
 }
@@ -32,9 +39,9 @@ main > section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 3px solid rgb(153, 111, 76);
+  border: 2px solid rgb(153, 111, 76);
   border-radius:6px ;
-  box-shadow: rgb(153, 111, 76, 0.5) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px;
+  box-shadow:  rgb(255, 255, 255) 10px -10px 0px -3px, rgb(153, 111, 76, 0.5) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgba(148, 102, 65, 0.8) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px;
 }
 
 .login h1 {
@@ -98,18 +105,20 @@ input.visited {
   align-items: center;
   margin-right: 13px;
   background-repeat: no-repeat;
-  background-image: url("https://i.pinimg.com/originals/9a/ee/7b/9aee7b7f0f139531a19231a96584e229.jpg");
+  background-image: url("https://images.pexels.com/photos/3467149/pexels-photo-3467149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   }
   .left{
   width: 40%;
   background-color: white;
   margin-right: 14px;
-  }
-  .login {
-    border: 5px solid rgb(153, 111, 76);
+  margin-top: 350px;
+  box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px, rgb(153, 111, 76, 0.5) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgba(148, 102, 65, 0.8) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px;
+}
+.login {
+    border: 3px solid rgb(153, 111, 76);
     padding: 20px;
     border-radius:6px ;
-    box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px, rgb(153, 111, 76, 0.5) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgba(148, 102, 65, 0.8) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px;;
+    z-index: 1;
     width: 100%;
   }
   .logo-container {
