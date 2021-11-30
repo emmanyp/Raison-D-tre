@@ -111,7 +111,7 @@ input.visited {
   width: 40%;
   background-color: white;
   margin-right: 14px;
-  margin-top: 250px;
+  margin-top: 220px;
   box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px, rgb(153, 111, 76, 0.5) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgba(148, 102, 65, 0.8) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px;
 }
 .login {
