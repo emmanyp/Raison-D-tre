@@ -70,9 +70,10 @@ section{
   margin-bottom: 10px;
 }
 
-/* .submit {
-  color:  rgba(153, 111, 76, 0.596);
+ .submit {
+  color:  white;
   border-color:  rgba(153, 111, 76, 0.596);
+  margin-left: 5px;
 }
 
 .secondary {
@@ -88,11 +89,12 @@ section{
 .danger {
   color:  rgba(153, 111, 76, 0.596);
   border-color:  rgba(153, 111, 76, 0.596);
-} */
+  margin-left: 10px;
+} 
 
 @media only screen and (min-width: 768px) {
   section {
-   display:inline-flex;
+  display:inline-flex;
   flex-direction:row;
   align-items: center;
   justify-content: center;
@@ -114,35 +116,5 @@ section{
     width: 100%;
     margin: 0;
   }
-   /* .usr-img { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow:  rgb(153, 111, 76, 0.5) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px
-} */
-
-  /* .place-details{
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-  justify-content: center;
-}  */
-
-/* .place-details h3 {
-  margin: 20px 0 10px;
-  font-size: var(--font-l); */
-  /* text-align: center; */
-  /* margin-right: 25px; */
-/* }  */
-
-/* .place-details p {
-  font-size: var(--font-reg);
-  margin: 8px 0; */
-  /* text-align: center; */
-  /* margin-right: 25px; */
-/* } */
-
+  
 }

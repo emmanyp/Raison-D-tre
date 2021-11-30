@@ -14,7 +14,6 @@ main > section {
   justify-content: center;
   flex-direction: column;
 }
-
 .header-logo-container {
   display: none;
 }
@@ -22,10 +21,8 @@ main > section {
 .logo-container {
   max-width: 375px;
 }
-.pokemon-logo{
-  width: 100%;
-}
-.pokemon-container {
+
+.-container {
   width: 80%;
 }
 
@@ -34,11 +31,15 @@ main > section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
+  border: 3px solid rgb(153, 111, 76);
+  border-radius:6px ;
+  box-shadow: rgb(153, 111, 76, 0.5) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px;
 }
 
 .login h1 {
-  font-size: clamp(3.2rem, 3vw, 4.8rem);
+  color: rgb(153, 111, 76);
+  font-size: clamp(2.2rem, 3vw, 2.4rem);
   margin: 10px 0;
 }
 
@@ -47,6 +48,7 @@ main > section {
   flex-direction: column;
   width: 100%;
   margin: 14px 0 0px;
+  color: rgb(153, 111, 76);
 }
 
 .login label {
@@ -54,11 +56,23 @@ main > section {
   margin-bottom: 6px;
 }
 
-.login input {
+.login input{
   font-size: var(--font-l);
   padding: 2px 4px;
+  border-radius: 6px;
 }
-
+input:-webkit-autofill {
+    box-shadow: 0 0 0 9999px rgb(153, 111, 76, 0.3) inset;
+}
+input:focus {
+  background-color:rgb(153, 111, 76, rgb(153, 111, 76, 0.5));
+  color:darkgrey;
+  outline: 2px solid rgb(153, 111, 76);  
+}
+input.visited {
+  color: darkgrey;
+  outline: 2px solid rgb(153, 111, 76);  
+}
 .login .btn {
   align-self: flex-end;
   margin-right: 0;
@@ -67,18 +81,26 @@ main > section {
 
 @media only screen and (min-width: 768px) {
   main {
-    justify-content: space-around;
+    justify-content:space-evenly;
+    margin: 0;
+  }
+  main > section {
+    width: 50%;
+  }
+  img{
+    height: 150%;
+    width: 150%;
+    margin: o;
+
+    
   }
 
-  main > section {
-    width: 40%;
-  }
 
   .login {
-    border: var(--borders);
+    border: 5px solid rgb(153, 111, 76);
     padding: 20px;
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--card-box-shadow);
+    border-radius:6px ;
+    box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px, rgb(153, 111, 76, 0.5) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgba(148, 102, 65, 0.8) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px;;
     width: 100%;
   }
   .logo-container {
