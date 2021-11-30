@@ -82,7 +82,7 @@ class PlaceCreate(LoginRequiredMixin, CreateView):
 
 class PlaceUpdate(LoginRequiredMixin, UpdateView):
     model = Place
-    fields = '__all__'
+    fields = ['name', 'location', 'description', 'date', 'end_date']
 
 class PlaceDelete(LoginRequiredMixin, DeleteView):
     model = Place

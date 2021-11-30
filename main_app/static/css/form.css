@@ -23,7 +23,8 @@ th {
   font-size:large;
   font-weight: bold;
   color:rgb(153, 111, 76) ;
-  text-align: center;
+  text-align: right;
+  padding: 10px;
 }
 
 td {
