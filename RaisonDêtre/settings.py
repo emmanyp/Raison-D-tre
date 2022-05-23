@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'RaisonDêtre.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'RaisonDêtre',
+        'NAME': 'raisondêtre',
     }
 }
 
